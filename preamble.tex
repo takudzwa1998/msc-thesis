@@ -1,0 +1,36 @@
+% =====================================================================
+% preamble.tex — packages and settings shared by the thesis shell and,
+% later, any standalone paper shell built from the same chapters.
+% =====================================================================
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[a4paper, margin=2.5cm]{geometry}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{amsmath, amssymb}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+% ---------------------------------------------------------------------
+% Bibliography: biblatex + biber, fed by Zotero's "Better BibTeX" export
+% (bib/references.bib). Set "Keep updated" in Zotero so this file
+% refreshes automatically — see README.md.
+% ---------------------------------------------------------------------
+\usepackage[
+    backend=biber,
+    style=numeric,      % swap to authoryear/ieee as your field/journal needs
+    sorting=none
+]{biblatex}
+\addbibresource{bib/references.bib}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=blue,
+    urlcolor=blue
+}

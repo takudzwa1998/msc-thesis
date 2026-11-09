@@ -1,0 +1,58 @@
+% =====================================================================
+% main.tex — Master's thesis shell (UCT MSc(Eng), EE)
+%
+% This is a GENERIC scaffold using the standard `report` class.
+% Swap in the UCT EBE faculty thesis class/template as soon as you
+% have it — the chapter files should not need to change, only this
+% shell and preamble.tex.
+%
+% Designed to also let the literature review (chapters/lit_review.tex)
+% be lifted out almost unchanged into a standalone journal/conference
+% article later — see README.md.
+% =====================================================================
+
+\documentclass[12pt, a4paper, oneside]{report}
+
+\input{preamble}
+
+% ---------------------------------------------------------------------
+% Title page info — placeholder, replace with UCT-required front matter
+% ---------------------------------------------------------------------
+\title{Thesis Title (working)}
+\author{Takudzwa Shumbamhini}
+\date{\today}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter*{Declaration}
+% UCT plagiarism declaration goes here — check the EBE faculty handbook
+% for the exact required wording.
+
+\chapter*{Abstract}
+\input{chapters/abstract}
+
+\chapter*{Acknowledgements}
+
+\mainmatter
+
+\input{chapters/introduction}
+\input{chapters/lit_review}
+\input{chapters/methodology}
+\input{chapters/results}
+\input{chapters/discussion}
+\input{chapters/conclusion}
+
+\appendix
+\input{chapters/appendix}
+
+\backmatter
+\printbibliography
+
+\end{document}
